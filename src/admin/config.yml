@@ -2,7 +2,7 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: main
-  repo: stffcluster/minimal-ds-ideas
+  repo: stffcluster/minimal-design-ideas
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
