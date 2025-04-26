@@ -18,13 +18,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Content", name: "content", widget: "markdown", modes: [rich_text], buttons: [bold, italic, link, quote, bulleted-list, numbered-list],  pattern: ['.{12,}', "Must have at least 12 characters"]}
+      - { label: "Body", name: "body", widget: "markdown", modes: [rich_text], buttons: [bold, italic, link, quote, bulleted-list, numbered-list],  pattern: ['.{12,}', "Must have at least 12 characters"]}
       - widget: select
         label: "tags"
         name: "tags"
         multiple: true
         create: true
-        options: ["Tags", "created", "from", "config.yml"]
+        options: ["what"]
+        default: ["note"]
   - label: "Blog"
     name: "blog"
     folder: "src/posts"

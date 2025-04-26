@@ -1,16 +1,12 @@
 ---
-title: home
 layout: layouts/base.njk
-year: 2025
-week: 15
 ---
     
-# {{ title }}
+# Notes
 
 <ul>
-{%- for post in collections.all -%}
-    <li>
-        <a href="{{ post.url }}">{{ post.url }}</a>
-    </li>   
+{%- for note in collections.note -%}
+    <h2>{{ note.title }}</h2>
+    {{ content | safe}}
 {%- endfor -%}
 </ul>
