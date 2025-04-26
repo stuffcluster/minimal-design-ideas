@@ -4,9 +4,7 @@ layout: layouts/base.njk
     
 # Notes
 
-<ul>
 {%- for note in collections.note -%}
-    <h2>{{ note.title }}</h2>
-    {{ content | safe}}
+    <h2>{{ note.data.title }}</h2>
+    {{ note.content | safe}}
 {%- endfor -%}
-</ul>
