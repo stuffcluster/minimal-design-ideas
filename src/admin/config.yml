@@ -10,6 +10,7 @@ public_folder: "/static/img"
 collections:
   - label: "Note"
     name: "note"
+    slug: "{{slug}}"
     folder: "src/notes"
     create: true
     editor:
