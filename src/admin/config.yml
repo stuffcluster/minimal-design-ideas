@@ -26,7 +26,6 @@ collections:
         multiple: true
         create: true
         options: ["note"]
-        default: ["note"]
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
