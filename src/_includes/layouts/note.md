@@ -6,8 +6,10 @@ layout: "layouts/base.njk"
 
 {{ content | safe }}
 
-   <details>
-        <summary>note as an independent page</summary>
+<details>
+    <summary>
+        note as an independent page
+    </summary>
 
 It's useful to be able to pick out specific notes by referring to a page, but there's an interesting thing here: we're assigning each note a URL to allow editors to arbitrarily refer to other bits of content, _not_ (primarily) because it's valuable to consume that content as a single page. 
 
